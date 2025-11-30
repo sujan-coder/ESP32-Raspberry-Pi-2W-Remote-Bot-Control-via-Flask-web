@@ -65,7 +65,7 @@ WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://127.0.0.1:8080
  * Running on http://192.1x8.0.1x0:8080
 ```
-<img width="1107" height="659" alt="{19E363E6-017F-43A2-B96B-E9C39146AE87}" src="https://github.com/user-attachments/assets/c66104bf-98cb-4100-8a73-318af30af4fe" />
+<img width="1509" height="604" alt="{D5275583-3820-4D74-B8F1-101937BAB4CB}" src="https://github.com/user-attachments/assets/e525af51-f476-40b7-8577-c0a01917044d" />
 
 ## Note
 - This project is ment for local useage only.
