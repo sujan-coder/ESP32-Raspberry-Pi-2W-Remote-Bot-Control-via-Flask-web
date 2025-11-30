@@ -16,7 +16,9 @@ The project is intended for local network control.
 
 The project works inside your local Wi-Fi network and can be accessed from:
 
-- Mobile/PC phone browser
+- PC browser
+
+- Mobile phone browser
 
 - SSH terminal (for starting Flask server)
 
@@ -49,6 +51,19 @@ python3 -m venv venv
 Switch terminal to use virtual environment (while running the project)
 ```sh
 source venv/bin/activate
+```
+Program Esp32 with the motor driver
+create directory and run the code  in Pi
+```sh
+nano interface_code.py
+python interface_code.py
+(venv) Pi@raspi:~/esp_bot $ python robot_server.py 
+ * Serving Flask app 'interface_code'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.1x8.0.1x0:8080
 ```
 
 ## Note
