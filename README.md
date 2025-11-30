@@ -16,9 +16,7 @@ The project is intended for local network control.
 
 The project works inside your local Wi-Fi network and can be accessed from:
 
-- PC browser
-
-- Mobile phone browser
+- Mobile/PC phone browser
 
 - SSH terminal (for starting Flask server)
 
