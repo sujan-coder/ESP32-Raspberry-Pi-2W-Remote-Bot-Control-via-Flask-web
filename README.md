@@ -1,12 +1,13 @@
 # ESP32-Raspberry-Pi-2W-Remote-Bot-Control
-This project provides a simple web interface to control  motot-driven robot connected to a Raspberry Pi.
+This project provides a simple web interface to control  motor-driven robot connected to a Raspberry Pi with custom 3D printed model.
 The communication between the web server and the motor driver happens through UART using Python.
 
-The interface is built using Flask, and you can control the bot through buttons on a webpage.
-The project is intended for local network control.
 
 ![WhatsApp Image 2025-11-30 at 17 36 49_c4515a21](https://github.com/user-attachments/assets/de3565ee-f0bb-46df-b9ff-3298a6dd5ee6)
 
+
+The interface is built using Flask, and you can control the bot through buttons on a webpage.
+The project is intended for local network control.
 
 ## Hardware Used
 - Raspberry Pi (Python Flask Web Server)
