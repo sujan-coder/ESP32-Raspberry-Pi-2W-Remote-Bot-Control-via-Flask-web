@@ -16,9 +16,7 @@ The project is intended for local network control.
 
 The project works inside your local Wi-Fi network and can be accessed from:
 
-- PC browser
-
-- Mobile phone browser
+- Mobile/PC phone browser
 
 - SSH terminal (for starting Flask server)
 
@@ -65,6 +63,7 @@ WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://127.0.0.1:8080
  * Running on http://192.1x8.0.1x0:8080
 ```
+<img width="805" height="659" alt="{19E363E6-017F-43A2-B96B-E9C39146AE87}" src="https://github.com/user-attachments/assets/c66104bf-98cb-4100-8a73-318af30af4fe" />
 
 ## Note
 - This project is ment for local useage only.
