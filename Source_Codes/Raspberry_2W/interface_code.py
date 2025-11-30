@@ -10,7 +10,7 @@ def home():
     return """
     <html>
     <head>
-        <title>ESP32 Robot Control</title>
+        <title>ESP32 Bot Control</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -35,7 +35,7 @@ def home():
                 user-select: none;
                 -webkit-user-select: none;
             }
-            button:active {
+           button:active {
                 background-color: #45a049;
             }
             .controls {
@@ -57,4 +57,48 @@ def home():
             <div><button id="forward">Forward</button></div>
             <div></div>
 
-from flask import Flask, request
+            <div><button id="left">Left</button></div>
+            <div></div>
+            <div><button id="right">Right</button></div>
+
+            <div></div>
+            <div><button id="backward">Backward</button></div>
+            <div></div>
+        </div>
+
+        <script>
+        function send(cmd) {
+            fetch('/move?dir=' + cmd);
+        }
+        function setupButton(id, cmd) {
+            let btn = document.getElementById(id);
+
+            // Mouse events
+            btn.onmousedown = () => send(cmd);
+            btn.onmouseup   = () => send('S');
+
+            // Touch events (mobile)
+            btn.ontouchstart = () => send(cmd);
+            btn.ontouchend   = () => send('S');
+        }
+
+        setupButton("forward", "F");
+        setupButton("backward", "B");
+        setupButton("left", "L");
+        setupButton("right", "R");
+        </script>
+    </body>
+    </html>
+    """
+
+@app.route("/move")
+def move():
+    cmd = request.args.get("dir", "")
+    if cmd:
+        ser.write(cmd.encode())
+        return f"Sent: {cmd}"
+    return "No command"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
+
