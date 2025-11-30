@@ -33,7 +33,9 @@ Enable ssh for Raspberry Pi
 ```sh
 sudo raspi-config
 ```
-Check the GPIO Pins & board details
+Interface Options -> I1 SSH -> Enable
+
+Commaands to check the GPIO pins & board details
 ```sh
 pintest
 ps aux | grep python
