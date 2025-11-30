@@ -31,6 +31,8 @@ Enable ssh for Raspberry Pi
 ```sh
 sudo raspi-config
 ```
+<img width="1107" height="403" alt="image" src="https://github.com/user-attachments/assets/12313928-235c-4e54-9b32-40c83e0d5139" />
+
 Interface Options -> I1 SSH -> Enable
 
 Commaands to check the GPIO pins & board details
