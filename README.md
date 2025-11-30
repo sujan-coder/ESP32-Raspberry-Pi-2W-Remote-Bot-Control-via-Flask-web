@@ -9,6 +9,8 @@ The communication between the web server and the motor driver happens through UA
 The interface is built using Flask, and you can control the bot through buttons on a webpage.
 The project is intended for local network control.
 
+![WhatsApp Image 2025-11-30 at 17 41 56_95542f95](https://github.com/user-attachments/assets/40194c11-bf78-40a8-961a-87020ebed315)
+
 ## Hardware Used
 - Raspberry Pi (Python Flask Web Server)
 
